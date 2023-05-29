@@ -33,6 +33,8 @@ function Plugin.config()
 
   require('mason-lspconfig').setup({})
 
+	require('lspconfig').zls.setup {}
+
   vim.api.nvim_create_user_command(
     'Lsp',
     function(input)
