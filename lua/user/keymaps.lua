@@ -16,3 +16,15 @@ vim.keymap.set('n', '<Space>', '<Nop>', { silent = false, remap = false })
 
 -- Exit
 vim.keymap.set('n', '<leader>q', '<cmd> :q<CR>')
+
+-- Window / split navigation
+vim.keymap.set('n', '<C-H>', '<C-W><C-H>')
+vim.keymap.set('n', '<C-J>', '<C-W><C-J>')
+vim.keymap.set('n', '<C-K>', '<C-W><C-K>')
+vim.keymap.set('n', '<C-L>', '<C-W><C-L>')
+
+-- NvimTree
+vim.keymap.set('n', '<C-A>', require('nvim-tree.api').fs.create)
+
+-- Swap windows / splits
+-- vim.keymap.set('n', '<C-R>', '<C-W><C-R>')

@@ -4,9 +4,10 @@ return {
 				'nvim-tree/nvim-web-devicons', opt = true
 		},
 		config = function()
-				require('lualine').setup()
-				options = {
-						theme = "gruvbox-baby",
-				}
+				require('lualine').setup({
+						options = {
+								theme = "gruvbox-baby",
+						}
+				})
 		end
 }

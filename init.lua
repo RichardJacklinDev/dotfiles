@@ -11,3 +11,6 @@ require('user.settings')
 require('user.lazy')
 require('user.options')
 require('user.keymaps')
+
+-- Transparent nvim
+-- vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "Pmenu", "Float", "NormalFloat" })
