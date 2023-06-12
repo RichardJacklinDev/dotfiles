@@ -28,3 +28,6 @@ vim.keymap.set('n', '<C-A>', require('nvim-tree.api').fs.create)
 
 -- Swap windows / splits
 -- vim.keymap.set('n', '<C-R>', '<C-W><C-R>')
+
+-- Vimtex View
+vim.keymap.set('n', '<leader>v', '<plug>:(vimtex-view)', { silent = false, remap = true })

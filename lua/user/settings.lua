@@ -20,13 +20,11 @@ vim.opt.shiftwidth = 4
 vim.opt.termguicolors = true
 vim.opt.scrolloff = 8
 
--- VimTex
-vim.cmd([[ syntax enable ]])
-vim.cmd([[ let g:vimtext_view_method = 'zathura' ]])
-vim.cmd([[ let g:vimtex_compiler_method = 'latexmk' ]])
-
 -- Transparent nvim
- vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "Pmenu", "Float", "NormalFloat" })
+vim.g.transparent_groups = vim.list_extend(vim.g.transparent_groups or {}, { "Pmenu", "Float", "NormalFloat" })
 
 -- Transparency
 vim.cmd([[ au ColorScheme * hi Normal gui=none ]])
+
+-- Disable new line comment continuation
+vim.cmd([[ autocmd BufNewFile,BufRead * setlocal formatoptions-=cro ]])
